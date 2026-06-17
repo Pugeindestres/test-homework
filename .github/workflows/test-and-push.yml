@@ -50,5 +50,4 @@ jobs:
           git add .
           git commit -m "Автоматический пуш из source (тесты пройдены) [skip ci]" || echo "Нет изменений"
           
-          # ИСПОЛЬЗУЕМ ВСТРОЕННЫЙ GITHUB_TOKEN (не PUSH_TOKEN!)
           git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Pugeindestres/test-homework.git main
