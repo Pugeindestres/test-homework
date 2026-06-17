@@ -39,10 +39,8 @@ jobs:
           git fetch origin main || true
           git checkout main || git checkout --orphan main
           
-          # Копируем ВСЁ из source, КРОМЕ папки src
           git checkout source -- README.md package.json package-lock.json tests/ .github/
           
-          # Создаём пустую папку src (чтобы структура была видна)
           mkdir -p src
           touch src/.gitkeep
           
