@@ -1,0 +1,13 @@
+{
+  "name": "calculator-task",
+  "version": "1.0.0",
+  "description": "Задание: простой калькулятор",
+  "main": "src/calculator.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
